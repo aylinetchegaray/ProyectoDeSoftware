@@ -36,21 +36,17 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
 
-    // Scrollspy for active link
-    sections.forEach((section) => {
-      const sectionHeight = section.offsetHeight;
-      const sectionTop = section.offsetTop - 120;
-      const sectionId = section.getAttribute('id');
+    // Scrollspy for active link has been removed due to multi-page refactoring.
+  });
 
-      if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
-        navLinks.forEach((link) => {
-          link.classList.remove('active');
-          if (link.getAttribute('href') === `#${sectionId}`) {
-            link.classList.add('active');
-          }
-        });
-      }
-    });
+  // Dynamic active link highlighting based on current URL path
+  const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+  navLinks.forEach((link) => {
+    link.classList.remove('active');
+    const href = link.getAttribute('href');
+    if (href === currentPath) {
+      link.classList.add('active');
+    }
   });
 
   // Mobile menu toggle
