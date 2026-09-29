@@ -1,6 +1,6 @@
 # Portal Web Corporativo - Sprint 1
 
-Repositorio correspondiente al **Sprint 1** de la materia **Proyecto de Software** de la Licenciatura en Sistemas en la UNRN.
+Correspondiente al **Sprint 1** de la materia **Proyecto de Software** de la Licenciatura en Sistemas en la UNRN.
 
 ## Objetivo del Proyecto
 Desarrollo de un sitio web institucional estático, modularizado en páginas independientes para cubrir las **5 secciones principales** requeridas en la primera iteración:
@@ -54,3 +54,4 @@ cd corporate-software-website
 Abrir el archivo `index.html` en cualquier navegador web moderno (Chrome, Firefox, Edge) o levantarlo mediante una extensión de servidor local (ej. Live Server).
 
 Desarrollado por: Aylín Etchegaray
+Desarrollo Aumentado mediante Antigravity AI Agent
